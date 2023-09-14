@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>TempFy</title>
+</head>
+<body>
+    <!-- <div id="logo">
+    </div> -->
+    <img id="logo" src="Logo tempfy.svg" alt="">
+    <div id="content_main">
+        <main>
+            <div class="title">Converter Temperatura</div>
+            <select name="" id="select" onchange="convert()">
+                <option disabled selected>Selecione sua temperatura</option>
+                <option value="Celsius">Em celsius</option>
+                <option value="Fahrenheit">Em Fahrenheit</option>
+                <option value="Kelvin">Em Kelvin</option>
+            </select>
+            <input  id="temp" type="number" placeholder="Digite a temperatura" onchange="convert()"> 
+            <button id="bt_convert" onclick="bt_click()">Converter</button>
+        </main>
+        <div id="content_result">
+            <div class="title">Resultado:</div>
+            <div class="input_result">
+                <label id="label_1">Celsius</label>
+                <span id="value_1">10</span>
+            </div>
+            <div class="input_result">
+                <label id="label_2">Celsius</label>
+                <span id="value_2">100</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
